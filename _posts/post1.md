@@ -1,6 +1,8 @@
 ---
 title: Test post
-date: 2022-05-23
+date: 2024-06-15 
+categories: [testfiles]
+tags: [testfiles]
 ---
 
 # This is a test
