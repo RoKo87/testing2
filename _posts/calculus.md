@@ -1,0 +1,73 @@
+---
+title: "Calculus"
+date: 2024-06-19 00:00:00 -0600
+categories: [Math]
+tags: [Math, Calculus]
+---
+
+# Calculus
+## Part 1 - Calculus Basics
+### 1.0 - What is Calculus?
+
+Calculus is a branch of math that focuses on change, its rate (derivatives), and its total effects over time (integrals). Calculus is used in physics, engineering, and other fields  that focus on change.
+
+With calculus, you don't need to estimate. You can calculate and get accurate results. Calculus has been developed since the 1600s for such purposes by mathematicians like Isaac Newton, Leibniz, Riemann, Euler, and others.
+
+### 1.1 - Limits
+The fundamentals of calculus are based on **limits**. Limits are defined as what the y-value approaches as the x-value approaches a certain value. Limits are written like this:
+$$\lim_{x \rightarrow m} f(x) = n$$
+The above can be read as:
+- The limit of f(x), as x approaches m, is n.
+
+The limit approaching from the *left* side is written as $\lim_{x \rightarrow m^-} f(x)$ (a little minus sign above the m)\
+The limit approaching from the *right* side is written as $\lim_{x \rightarrow m^+} f(x)$ (a little plus sign above the m)
+
+Usually, the limit, as x approaches m, is f(m). For example:
+$$\lim_{x \rightarrow 4} (x^2 +3x)= 4^2+3(4)=28$$
+But sometimes, $\lim_{x \rightarrow m} f(x) \not= f(m)$. This happens when there is a "hole" (removable discontinuity) in the graph at x = m. Other times, limits fail to exist when...
+- The calculated limit is $\pm \infin$
+- The limit from the left and right disagree.
+- The graph oscillates at an infinite rate. Such as with $\sin(1/x)$
+
+### 1.2 - Growth Rate Comparison
+When you want to know the end behavior of any rational function, you have to know how fast different types of functions grow.
+
+Logarithmic functions are the slowest-growing functions, followed by radical, linear, and power functions. Exponential functions grow the fastest. We can describe slow-growing functions  as "light", and fast-growing ones as "heavy".
+
+Heavier functions in the denominator (bottom) of a rational function will cause at least one end of the function to approach 0. However, heavier functions in the numerator (top) will cause at least one end to approach infinity. Keep in mind that exponential functions only grow on one side.
+
+For example: $\frac{e^x+4x^2}{3x^2-e^x}$ will approach -1 in the positive direction, but $\frac{4}{3}$ in the negative direction.
+### 1.3 - Continuity
+
+A function is considered to be **continuous** if the graph contains no "holes", and if there are no gaps in the graph. 
+
+An area which causes a graph to be discontinuous are called **discontinuities**, which can be **removable** or **non-removable**
+- Removable continuities occur when the limit exists, but the function output does not. This can be expressed by a "hole" in the graph.
+- Non-removable discontinuities include a sudden jump in the graph and vertical asymptotes. 
+
+A **secant line** represents the average rate of change between two points on the function, intersecting the graph more than once.
+
+The **Intermediate Value Theorem** states that if a function $f(x)$, in a given subdomain ($a$ to $b$), is continuous, then a value between $f(a)$ and $f(b)$ has to exist between $a$ and $b$.
+
+### 1.4 - Derivatives and Differentiability
+
+We can determine the slope of a line by using the rate of change formula: $\frac{y_2-y_1}{x_2-x_1}$, but when we have a curve, we can’t determine the slope at a single point using the formula; this is because the slope constantly changes. 
+
+
+We can find the average rate of change (a.k.a. slope) using the previous formula. As the distance between $x_2$ and $x_2$ approaches 0, the average rate of change will get closer and closer to our true slope. 
+ So, if $x_2$ and $x_1$ are at the same point, we can find the slope of the curve at that point. However, the denominator for the formula will be 0.
+
+ This is where limits come into play. Let's say that the distance between the two x-values is $h$. We can say that as $h$ approaches 0, the average rate of change will be the actual or **instantaneous** rate of change. Now, we change the rate of change formula to match the statement above.
+ $$\frac{y_2-y_1}{x_2-x_1}=\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{f(x+h)-f(x)}{(x+h)-x}$$  
+ And so we end up with:
+ $$\lim_{h \rightarrow 0}\frac{f(x+h)-f(x)}{h}$$ 
+
+This is the definition of the instantaneous rate of change, or the  **derivative**, at a certain point. Derivatives are functions that output the slope of their parent function at each point. The process of turning a function into its derivative is called **differentiation**. 
+
+A function is differentiable if it is continuous and if there are no "sharp corners" or vertical slopes in the parent function's graph. Another way to say differentiable is **smooth**.
+
+Derivatives can be represented in many ways. The most common ways are $\frac{dy}{dx}$, $\frac{d}{dx}f(x)$, and $f'(x)$ (pronounced "f-prime of x").
+
+The **Mean Value Theorem** states that if $f(x)$ is differentiable throughout an interval, then the average slope of the interval is going to equal the instantaneous slope somewhere in the interval.
+
+<font size="5">Stay tuned for part 2: All About Derivatives</font>
