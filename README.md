@@ -1,0 +1,3 @@
+# OpenNote
+Work in progress...
+Expected to be ready by August 2024.
